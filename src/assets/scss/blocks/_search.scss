@@ -1,0 +1,17 @@
+.search {
+    background: rgba(#202020, .3);
+}
+
+.search__input {
+    display: block;
+    background: transparent;
+    border: none;
+    // text-align: center;
+    max-width: 21rem;
+    width: 100%;
+    padding: 1.2rem 2rem;
+    font-size: 1.2rem;
+    &::placeholder {
+        color: rgba(white, .4);
+    }
+}

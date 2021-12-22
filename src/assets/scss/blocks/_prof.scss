@@ -1,0 +1,50 @@
+.prof {
+    margin-top: -5rem;
+}
+
+.prof__image {
+    display: flex;
+    justify-content: center;
+}
+
+.prof__img {
+    border: 2px solid white;
+    border-radius: 50%;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, .25);
+}
+
+.prof__item {
+    font-size: 1.8rem;
+    font-family: $fontFamly;
+    line-height: 1.2;
+    text-align: center;
+    margin: 1.9rem 0 .3rem;
+    font-weight: 700;
+}
+
+.prof__discrube {
+    font-size: 1.6rem;
+    font-family: $fontFamly;
+    line-height: 1.2;
+    text-align: center;
+    color: $secondary-text;
+    font-weight: 300;
+    margin-bottom: 1.7rem;
+}
+
+.prof__text {
+    padding: 0 2rem;
+    color: $mainText;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-top: 3rem;
+}
+
+.prof__line {
+    height: 2px;
+    width: 26rem;
+    background-color: $background;
+    margin: 3rem 2rem;
+}

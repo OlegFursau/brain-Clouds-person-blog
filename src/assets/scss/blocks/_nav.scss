@@ -1,0 +1,43 @@
+.nav__list {
+    display: flex;
+    margin: 0;
+    // gap: 1rem;
+}
+
+.nav__item {
+    position: relative;
+    &:hover {
+        .nav__link {
+            background: $blue;
+            transition: .2s linear;
+        }
+        >.subnav {
+            display: block;
+            transition: .2s linear;
+        }
+    }
+}
+
+.nav__link {
+    display: block;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    padding: 1.35rem 1.5rem;
+    &.has-subnav {
+        position: relative;
+        padding-right: 3rem;
+        &::after {
+            content: "";
+            display: block;
+            border-style: solid;
+            border-width: 6px 5px 0 5px;
+            border-color: white transparent transparent transparent;
+            position: absolute;
+            top: 50%;
+            right: 1.35rem;
+            transform: translateY(-50%);
+        }
+    }
+}

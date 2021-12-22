@@ -1,0 +1,26 @@
+.subnav {
+    display: none;
+    width: 16.5rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: $blue;
+    padding: 0rem 2.7rem 1.3rem 1.2rem;
+    border-radius: 0 0 5px 5px;
+}
+
+.subnav__li {
+    margin-top: 1rem;
+}
+
+.subnav__li:hover.subnav__link {
+    background-color: darken($blue, 35%);
+    transition: .2s ease-in-out;
+}
+
+.subnav__link {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 3rem;
+}

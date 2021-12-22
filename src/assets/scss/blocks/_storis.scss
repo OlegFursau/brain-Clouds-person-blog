@@ -1,0 +1,67 @@
+.storis {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 19.5rem;
+    gap: 1.3rem;
+    cursor: pointer;
+    margin-bottom: 3rem;
+}
+
+.srtoris__item {
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(black, .2);
+    position: relative;
+    &::after {
+        content: "";
+        background-image: linear-gradient(to bottom, rgba(black, .8), rgba(black, 0) 50%, rgba(black, .8));
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+    }
+    &:hover .storis__preview {
+        transform: scale(1.3);
+        transition-duration: 3s;
+    }
+}
+
+.storis__preview {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: .5s ease-in-out;
+}
+
+.storis__title {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 4;
+    color: rgba(white, .7);
+    margin: 1.4rem 1.3rem;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.storis__data {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 4;
+    color: rgba(white, .7);
+    margin: 1.4rem 1.3rem;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    font-weight: 400;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}

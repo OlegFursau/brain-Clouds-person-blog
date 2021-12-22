@@ -1,0 +1,56 @@
+.addPost {
+    justify-content: space-between;
+    margin-bottom: 3rem;
+    box-shadow: 0 15px 25px rgba(black, .45);
+    background-color: $secondary;
+    border-radius: 5px;
+    padding: 1.5rem 2rem;
+}
+
+.addPost__form {
+    display: flex;
+    justify-content: space-between;
+}
+
+#post {
+    border: none;
+    width: 75%;
+    background: transparent;
+    resize: none;
+    font-family: inherit;
+    font-size: 1.5rem;
+    color: white;
+    &::placeholder {
+        color: #d2d2d2;
+        padding-top: 1.5rem;
+    }
+}
+
+.addPost__file {
+    display: block;
+    width: 4.4rem;
+    height: 4.4rem;
+}
+
+.addPost__send,
+.addPost__svg {
+    cursor: pointer;
+    &:hover {
+        fill: rgba(rgb(11, 11, 168), 100%);
+        transition: .1s ease-in-out;
+    }
+}
+
+input {
+    display: none;
+}
+
+.addPost__action {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.addPost__send {
+    border: none;
+    background-color: inherit;
+}

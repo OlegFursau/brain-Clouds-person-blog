@@ -1,0 +1,28 @@
+.sideBar {
+    width: $sidebar-width;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background-color: $premery;
+    box-shadow: 5px 0 35px rgba(#050505, .1)
+}
+
+.sideBar__header {
+    height: 180px;
+}
+
+.sideBar__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-color: $secondary;
+}
+
+.sideBar__footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+}

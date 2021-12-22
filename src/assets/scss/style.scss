@@ -1,5 +1,44 @@
-body {
-    background-color: black;
-    font-size: 21px;
-    color: white;
+@import "vars";
+@import"/src/vender/reset.css";
+html {
+    font-size: 62.5%;
 }
+
+body {
+    background-color: #181818;
+    font-size: $mainText;
+    color: $colorText;
+    font-family: $fontFamly;
+}
+
+*,
+* ::before,
+*::after {
+    box-sizing: border-box;
+}
+
+ul li {
+    list-style: none;
+}
+
+//import block
+@import "blocks/page";
+@import "blocks/header";
+@import "blocks/sideBar.scss";
+@import "blocks/main";
+@import "blocks/container";
+@import "blocks/prof";
+@import "blocks/social";
+@import "blocks/btn";
+@import "blocks/nav";
+@import "blocks/search";
+@import "blocks/subnav";
+@import "blocks/storis";
+@import "blocks/addPost";
+@import "blocks/post";
+@import "blocks/embade";
+@import "blocks/pagination";
+@import "blocks/related";
+@import "blocks/comments";
+@import "blocks/form";
+@import "blocks/coms";
